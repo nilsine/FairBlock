@@ -78,7 +78,7 @@ var matchWhitelistDirective = function(url, hostname, directive) {
             while ( i-- ) {
                 if ( matchWhitelistDirective(url, targetHostname, buckets[i]) ) {
                     // console.log('"%s" matche url "%s"', buckets[i], url);
-                    return false;
+                    return true;
                 }
             }
         }
@@ -88,7 +88,7 @@ var matchWhitelistDirective = function(url, hostname, directive) {
         }
         key = key.slice(pos + 1);
     }
-    return true;
+    return false;
 };
 
 /******************************************************************************/
@@ -110,7 +110,7 @@ var matchWhitelistDirective = function(url, hostname, directive) {
     var directive = scope === 'page' ? targetURL : targetHostname;
 
     // Add to directive list
-    if ( newState === false ) {
+    if ( newState === true ) {
         if ( netWhitelist.hasOwnProperty(key) === false ) {
             netWhitelist[key] = [];
         }
