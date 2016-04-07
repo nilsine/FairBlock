@@ -1,15 +1,15 @@
 ﻿#uBlock0-legacy-button {
-    list-style-image: url('../img/browsericons/icon24.svg');
+    list-style-image: url('../img/browsericons/icon24.png');
 }
 #uBlock0-legacy-button.off {
-    list-style-image: url('../img/browsericons/icon24-off.svg');
+    list-style-image: url('../img/browsericons/icon24-off.png');
 }
 
 toolbar[iconsize="small"] #uBlock0-legacy-button {
-    list-style-image: url('../img/browsericons/icon16.svg');
+    list-style-image: url('../img/browsericons/icon16.png');
 }
 toolbar[iconsize="small"] #uBlock0-legacy-button.off {
-    list-style-image: url('../img/browsericons/icon16-off.svg');
+    list-style-image: url('../img/browsericons/icon16-off.png');
 }
 #uBlock0-legacy-button[badge]::before {
     background: #555;
