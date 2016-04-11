@@ -5,7 +5,7 @@
 echo "*** uBlock0.chromium: Creating web store package"
 echo "*** uBlock0.chromium: Copying files"
 
-DES=dist/build/uBlock0.chromium
+DES=dist/build/fairBlock.chromium
 rm -rf $DES
 mkdir -p $DES
 
@@ -27,7 +27,7 @@ cp LICENSE.txt $DES/
 if [ "$1" = all ]; then
     echo "*** uBlock0.chromium: Creating package..."
     pushd $(dirname $DES/)
-    zip uBlock0.chromium.zip -qr $(basename $DES/)/*
+    zip fairBlock.chromium.zip -qr $(basename $DES/)/*
     popd
 fi
 

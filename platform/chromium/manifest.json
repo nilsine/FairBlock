@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
 
-    "name": "uBlock Origin",
+    "name": "fairBlock",
     "version": "1.6.5",
 
-    "default_locale": "en",
+    "default_locale": "fr",
     "description": "__MSG_extShortDesc__",
     "icons": {
         "16": "img/icon_16.png",
@@ -16,11 +16,11 @@
             "19": "img/browsericons/icon19.png",
             "38": "img/browsericons/icon38.png"
         },
-        "default_title": "uBlock Origin",
+        "default_title": "fairBlock",
         "default_popup": "popup.html"
     },
 
-    "author": "All uBlock Origin contributors",
+    "author": "Nilsine & all uBlock Origin contributors",
     "background": {
         "page": "background.html"
     },
@@ -62,7 +62,7 @@
         "http://*/*",
         "https://*/*"
     ],
-    "short_name": "uBlock₀",
+    "short_name": "fairBlock",
     "storage": {
         "managed_schema": "managed_storage.json"
     }

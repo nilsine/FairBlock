@@ -4,7 +4,7 @@
 
 echo "*** uBlock0.firefox: Copying files"
 
-DES=dist/build/uBlock0.firefox
+DES=dist/build/fairBlock.firefox
 rm -rf $DES
 mkdir -p $DES
 
@@ -37,7 +37,7 @@ python tools/make-firefox-meta.py $DES/ "$2"
 if [ "$1" = all ]; then
     echo "*** uBlock0.firefox: Creating package..."
     pushd $DES/
-    zip ../uBlock0.firefox.xpi -qr *
+    zip ../fairBlock.firefox.xpi -qr *
     popd
 fi
 

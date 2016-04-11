@@ -1,15 +1,15 @@
 {
   "extName":{
-    "message":"uBlock₀",
+    "message":"fairBlock",
     "description":"extension name."
   },
   "extShortDesc":{
-    "message":"Un bloqueur de nuisances efficace, qui ménagera votre processeur et votre mémoire vive.",
+    "message":"Un bloqueur de publicité sélectif. Préservez le web gratuit en choisissant sur quels sites vous bloquez la publicité.",
     "description":"this will be in the chrome web store: must be 132 characters or less"
   },
   "dashboardName":{
-    "message":"uBlock₀ — Tableau de bord",
-    "description":"English: uBlock₀ — Dashboard"
+    "message":"fairBlock — Tableau de bord",
+    "description":"English: fairBlock — Dashboard"
   },
   "settingsPageName":{
     "message":"Paramètres",
@@ -32,7 +32,7 @@
     "description":"appears as tab name in dashboard"
   },
   "statsPageName":{
-    "message":"uBlock₀ — Journal des requêtes réseau",
+    "message":"fairBlock — Journal des requêtes réseau",
     "description":"Title for the logger window"
   },
   "aboutPageName":{
@@ -40,8 +40,8 @@
     "description":"appears as tab name in dashboard"
   },
   "popupPowerSwitchInfo":{
-    "message":"Clic : Désactiver\/Activer uBlock Origin pour ce site.\n\nCtrl+clic : Désactiver uBlock Origin uniquement sur cette page.",
-    "description":"English: Click: disable\/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message":"Clic : Désactiver\/Activer fairBlock pour ce site.\n\nCtrl+clic : Désactiver fairBlock uniquement sur cette page.",
+    "description":"English: Click: disable\/enable fairBlock for this site.\n\nCtrl+click: disable fairBlock only on this page."
   },
   "popupBlockedRequestPrompt":{
     "message":"Requêtes bloquées",
@@ -272,8 +272,8 @@
     "description":"English: Parse and enforce Adblock+ element hiding filters."
   },
   "3pParseAllABPHideFiltersInfo":{
-    "message":"<p>Cette option permet de prendre en charge les filtres Adblock Plus de type <a href=\"https:\/\/adblockplus.org\/en\/faq_internal#elemhide\">&ldquo;element hiding&rdquo;<\/a>. Ces filtres ont principalement un impact visuel, servant à dissimuler des éléments nuisibles d'une page Web et qui ne sont pas blocables par le filtrage standard.<\/p><p>L'activation de cette fonctionnalité augmente l'empreinte mémoire de uBlock Origin.<\/p>",
-    "description":"This option enables the parsing and enforcing of Adblock Plus-compatible 'element hiding' filters. These filters are essentially cosmetic, they serve to hide elements in a web page which are deemed to be a visual nuisance, and which can't be blocked by the net request-based filtering engine.\n\nEnabling this feature increases uBlock Origin's memory footprint."
+    "message":"<p>Cette option permet de prendre en charge les filtres Adblock Plus de type <a href=\"https:\/\/adblockplus.org\/en\/faq_internal#elemhide\">&ldquo;element hiding&rdquo;<\/a>. Ces filtres ont principalement un impact visuel, servant à dissimuler des éléments nuisibles d'une page Web et qui ne sont pas blocables par le filtrage standard.<\/p><p>L'activation de cette fonctionnalité augmente l'empreinte mémoire de fairBlock.<\/p>",
+    "description":"This option enables the parsing and enforcing of Adblock Plus-compatible 'element hiding' filters. These filters are essentially cosmetic, they serve to hide elements in a web page which are deemed to be a visual nuisance, and which can't be blocked by the net request-based filtering engine.\n\nEnabling this feature increases fairBlock's memory footprint."
   },
   "3pListsOfBlockedHostsHeader":{
     "message":"Listes prédéfinies d'hôtes à bloquer",
@@ -405,7 +405,7 @@
   },
   "whitelistPrompt":{
     "message":"Renseignez ici votre liste d'hôtes à interdire. Un nom d'hôte par ligne. Les noms d'hôte invalides seront ignorés et vous n'en serez pas averti(e).",
-    "description":"English: Your list of host names for which uBlock₀ will be disabled. One host name per line. Invalid host names will be silently ignored."
+    "description":"English: Your list of host names for which fairBlock will be disabled. One host name per line. Invalid host names will be silently ignored."
   },
   "whitelistImport":{
     "message":"Importer",
@@ -544,7 +544,7 @@
     "description":"English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm":{
-    "message":"Vos paramètres seront remplacés par les données sauvegardées le {{time}}, puis uBlock Origin redémarrera.\n\nProcéder à l'importation ?",
+    "message":"Vos paramètres seront remplacés par les données sauvegardées le {{time}}, puis fairBlock redémarrera.\n\nProcéder à l'importation ?",
     "description":"Message asking user to confirm restore"
   },
   "aboutRestoreDataError":{
@@ -552,7 +552,7 @@
     "description":"Message to display when an error occurred during restore"
   },
   "aboutResetDataConfirm":{
-    "message":"Vos paramètres seront effacés, puis uBlock Origin redémarrera.\n\nProcéder à la réinitialisation des paramètres ?",
+    "message":"Vos paramètres seront effacés, puis fairBlock redémarrera.\n\nProcéder à la réinitialisation des paramètres ?",
     "description":"Message asking user to confirm reset"
   },
   "errorCantConnectTo":{
@@ -560,7 +560,7 @@
     "description":"English: Network error: unable to connect to {{url}}"
   },
   "subscriberConfirm":{
-    "message":"uBlock₀ : Ajouter la ressource Web suivante à votre sélection de listes de filtrage ?\n\nTitre : \"{{title}}\"\nURL : {{url}}",
+    "message":"fairBlock : Ajouter la ressource Web suivante à votre sélection de listes de filtrage ?\n\nTitre : \"{{title}}\"\nURL : {{url}}",
     "description":"English: The message seen by the user to confirm subscription to a ABP filter list"
   },
   "elapsedOneMinuteAgo":{
@@ -597,11 +597,11 @@
   },
   "fennecMenuItemBlockingOff":{
     "message":"Arrêt",
-    "description":"Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description":"Firefox-specific: appears as 'fairBlock (off)'"
   },
   "docblockedPrompt1":{
-    "message":"uBlock Origin a empêché le chargement de la page suivante :",
-    "description":"English: uBlock₀ has prevented the following page from loading:"
+    "message":"fairBlock a empêché le chargement de la page suivante :",
+    "description":"English: fairBlock has prevented the following page from loading:"
   },
   "docblockedPrompt2":{
     "message":"À cause du filtre suivant :",
