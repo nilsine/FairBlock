@@ -273,10 +273,6 @@ var filterDecompiler = (function() {
         var typeVal = bits >>> 4 & 0x0F;
         if ( typeVal ) {
             opts.push(typeValToTypeName[typeVal]);
-            // Because of the way `elemhide` is implemented
-            if ( typeVal === 13 ) {
-                filter = '@@' + filter;
-            }
         }
         if ( opts.length !== 0 ) {
             filter += '$' + opts.join(',');
@@ -1137,6 +1133,17 @@ var netFilteringManager = (function() {
         container.appendChild(preview);
     };
 
+    // https://github.com/gorhill/uBlock/issues/1511
+    var shortenLongString = function(url, max) {
+        var urlLen = url.length;
+        if ( urlLen <= max ) {
+            return url;
+        }
+        var n = urlLen - max - 1;
+        var i = (urlLen - n) / 2 | 0;
+        return url.slice(0, i) + '…' + url.slice(i + n);
+    };
+
     // Build list of candidate URLs
     var createTargetURLs = function(url) {
         var urls = [];
@@ -1189,7 +1196,7 @@ var netFilteringManager = (function() {
             url = targetURLs[i];
             menuEntry = menuEntryTemplate.cloneNode(true);
             menuEntry.cells[0].children[0].setAttribute('data-url', url);
-            menuEntry.cells[1].textContent = url;
+            menuEntry.cells[1].textContent = shortenLongString(url, 128);
             tbody.appendChild(menuEntry);
         }
 
@@ -1272,7 +1279,7 @@ var netFilteringManager = (function() {
                     value = targetURLs[i].replace(/^[a-z]+:\/\//, '');
                     option = document.createElement('option');
                     option.setAttribute('value', value);
-                    option.textContent = value;
+                    option.textContent = shortenLongString(value, 128);
                     select.appendChild(option);
                 }
                 nodes.push(select);

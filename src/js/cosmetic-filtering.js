@@ -372,21 +372,17 @@ FilterParser.prototype.parse = function(raw) {
 
     switch ( matches[1] ) {
     case 'contains':
-        this.suffix = 'script?';
         // Plain string- or regex-based?
         if ( token.startsWith('/') === false || token.endsWith('/') === false ) {
-            this.suffix += token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            token = token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         } else {
-            this.suffix += token.slice(1, -1);
-            if ( isBadRegex(this.suffix) ) {
-                console.error(
-                    "uBlock Origin> discarding bad regular expression-based cosmetic filter '%s': '%s'",
-                    raw,
-                    isBadRegex.message
-                );
+            token = token.slice(1, -1);
+            if ( isBadRegex(token) ) {
+                µb.logger.writeOne('', 'error', 'Cosmetic filtering – bad regular expression: ' + raw + ' (' + isBadRegex.message + ')');
                 this.invalid = true;
             }
         }
+        this.suffix = 'script?' + token;
         break;
     case 'inject':
         this.suffix = 'script+' + token;
@@ -634,7 +630,7 @@ FilterContainer.prototype.reset = function() {
     this.µburi = µb.URI;
     this.frozen = false;
     this.acceptedCount = 0;
-    this.duplicateCount = 0;
+    this.discardedCount = 0;
     this.duplicateBuster = {};
 
     this.selectorCache = {};
@@ -706,7 +702,7 @@ FilterContainer.prototype.isValidSelector = (function() {
                 return true;
             }
         }
-        console.error('uBlock> invalid cosmetic filter:', s);
+        µb.logger.writeOne('', 'error', 'Cosmetic filtering – invalid filter: ' + s);
         return false;
     };
 })();
@@ -921,7 +917,7 @@ FilterContainer.prototype.fromCompiledContent = function(text, lineBeg, skip) {
 
         this.acceptedCount += 1;
         if ( this.duplicateBuster.hasOwnProperty(line) ) {
-            this.duplicateCount += 1;
+            this.discardedCount += 1;
             continue;
         }
         this.duplicateBuster[line] = true;
@@ -1029,6 +1025,8 @@ FilterContainer.prototype.skipCompiledContent = function(text, lineBeg) {
         if ( lineEnd === -1 ) {
             lineEnd = textEnd;
         }
+        this.acceptedCount += 1;
+        this.discardedCount += 1;
         lineBeg = lineEnd + 1;
     }
     return textEnd;
@@ -1187,7 +1185,7 @@ FilterContainer.prototype.toSelfie = function() {
 
     return {
         acceptedCount: this.acceptedCount,
-        duplicateCount: this.duplicateCount,
+        discardedCount: this.discardedCount,
         hostnameSpecificFilters: selfieFromDict(this.hostnameFilters),
         entitySpecificFilters: this.entityFilters,
         lowGenericHide: selfieFromDict(this.lowGenericHide),
@@ -1251,7 +1249,7 @@ FilterContainer.prototype.fromSelfie = function(selfie) {
     };
 
     this.acceptedCount = selfie.acceptedCount;
-    this.duplicateCount = selfie.duplicateCount;
+    this.discardedCount = selfie.discardedCount;
     this.hostnameFilters = dictFromSelfie(selfie.hostnameSpecificFilters);
     this.entityFilters = selfie.entitySpecificFilters;
     this.lowGenericHide = dictFromSelfie(selfie.lowGenericHide);
@@ -1496,7 +1494,7 @@ FilterContainer.prototype.retrieveDomainSelectors = function(request) {
 /******************************************************************************/
 
 FilterContainer.prototype.getFilterCount = function() {
-    return this.acceptedCount - this.duplicateCount;
+    return this.acceptedCount - this.discardedCount;
 };
 
 /******************************************************************************/
