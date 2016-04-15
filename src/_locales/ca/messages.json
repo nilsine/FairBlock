@@ -1,6 +1,6 @@
 {
   "extName":{
-    "message":"uBlock₀",
+    "message":"fairBlock",
     "description":"extension name."
   },
   "extShortDesc":{
@@ -8,8 +8,8 @@
     "description":"this will be in the chrome web store: must be 132 characters or less"
   },
   "dashboardName":{
-    "message":"uBlock₀ — Tauler de control",
-    "description":"English: uBlock₀ — Dashboard"
+    "message":"fairBlock — Tauler de control",
+    "description":"English: fairBlock — Dashboard"
   },
   "settingsPageName":{
     "message":"Configuració",
@@ -32,7 +32,7 @@
     "description":"appears as tab name in dashboard"
   },
   "statsPageName":{
-    "message":"uBlock₀ — Registre de peticions de xarxa",
+    "message":"fairBlock — Registre de peticions de xarxa",
     "description":"Title for the logger window"
   },
   "aboutPageName":{
@@ -41,7 +41,7 @@
   },
   "popupPowerSwitchInfo":{
     "message":"Clic: habilita\/inhabilita l'µBlock per a aquest lloc.\n\nCtrl+clic: inhabilita l'µBlock només en aquesta pàgina.",
-    "description":"English: Click: disable\/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "description":"English: Click: disable\/enable fairBlock for this site.\n\nCtrl+click: disable fairBlock only on this page."
   },
   "popupBlockedRequestPrompt":{
     "message":"sol·licituds bloquejades",
@@ -273,7 +273,7 @@
   },
   "3pParseAllABPHideFiltersInfo":{
     "message":"<p>Aquesta opció permet l'anàlisi i l'aplicació dels <a href=\"https:\/\/adblockplus.org\/en\/faq_internal#elemhide\">filtres compatibles amb l'Adblock Plus &ldquo;element hiding&rdquo;<\/a>. Aquests filtres són principalment cosmètics, que serveixen per amagar elements d'una pàgina web molestos que per defecte no es poden amagar.<\/p><p>Habilitant aquesta opció augmentarà el consum de memòria de l'<i>µBlock<\/i>.<\/p>",
-    "description":"This option enables the parsing and enforcing of Adblock Plus-compatible 'element hiding' filters. These filters are essentially cosmetic, they serve to hide elements in a web page which are deemed to be a visual nuisance, and which can't be blocked by the net request-based filtering engine.\n\nEnabling this feature increases uBlock Origin's memory footprint."
+    "description":"This option enables the parsing and enforcing of Adblock Plus-compatible 'element hiding' filters. These filters are essentially cosmetic, they serve to hide elements in a web page which are deemed to be a visual nuisance, and which can't be blocked by the net request-based filtering engine.\n\nEnabling this feature increases fairBlock's memory footprint."
   },
   "3pListsOfBlockedHostsHeader":{
     "message":"Llistes de servidors bloquejats",
@@ -405,7 +405,7 @@
   },
   "whitelistPrompt":{
     "message":"Llistat dels noms de servidor amb que s'inhabilitarà l'µBlock. Una entrada per línia. S'ignoraran els noms de servidor no vàlids.",
-    "description":"English: Your list of host names for which uBlock₀ will be disabled. One host name per line. Invalid host names will be silently ignored."
+    "description":"English: Your list of host names for which fairBlock will be disabled. One host name per line. Invalid host names will be silently ignored."
   },
   "whitelistImport":{
     "message":"Imporar i annexar",
@@ -597,11 +597,11 @@
   },
   "fennecMenuItemBlockingOff":{
     "message":"desactivat",
-    "description":"Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description":"Firefox-specific: appears as 'fairBlock (off)'"
   },
   "docblockedPrompt1":{
     "message":"L'ublock ha rebutjat contingut d'aquest web:",
-    "description":"English: uBlock₀ has prevented the following page from loading:"
+    "description":"English: fairBlock has prevented the following page from loading:"
   },
   "docblockedPrompt2":{
     "message":"Detectat per aquest filtre",

@@ -1,6 +1,6 @@
 {
   "extName":{
-    "message":"uBlock₀",
+    "message":"fairBlock",
     "description":"extension name."
   },
   "extShortDesc":{
@@ -8,8 +8,8 @@
     "description":"this will be in the chrome web store: must be 132 characters or less"
   },
   "dashboardName":{
-    "message":"uBlock₀ — داشبورد",
-    "description":"English: uBlock₀ — Dashboard"
+    "message":"fairBlock — داشبورد",
+    "description":"English: fairBlock — Dashboard"
   },
   "settingsPageName":{
     "message":"تنظیمات",
@@ -32,7 +32,7 @@
     "description":"appears as tab name in dashboard"
   },
   "statsPageName":{
-    "message":"uBlock₀ — لاگ درخواست های شبکه",
+    "message":"fairBlock — لاگ درخواست های شبکه",
     "description":"Title for the logger window"
   },
   "aboutPageName":{
@@ -40,8 +40,8 @@
     "description":"appears as tab name in dashboard"
   },
   "popupPowerSwitchInfo":{
-    "message":"کلیک: غیر فعال\/ فعال کردن uBlock₀ برای این سایت.\n\nکنترل+کلیک: غیر فعال کردن uBlock₀ فقط برای همین صفحه.",
-    "description":"English: Click: disable\/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "message":"کلیک: غیر فعال\/ فعال کردن fairBlock برای این سایت.\n\nکنترل+کلیک: غیر فعال کردن fairBlock فقط برای همین صفحه.",
+    "description":"English: Click: disable\/enable fairBlock for this site.\n\nCtrl+click: disable fairBlock only on this page."
   },
   "popupBlockedRequestPrompt":{
     "message":"درخواست مسدود شده",
@@ -273,7 +273,7 @@
   },
   "3pParseAllABPHideFiltersInfo":{
     "message":"<p>این گزینه <a href=\"https:\/\/adblockplus.org\/en\/faq_internal#elemhide\">Adblock Plus-compatible &ldquo;element hiding&rdquo; filters<\/a> را  تجزیه و اجرا میکند. این فیلتر ها اساساً فنی هستند،  آنها اشیاء موجود در صفحه وب را که مزاحم تلقی میشوند و با موتور فیلترینگ شبکه قابل بلاک کردن نیستند را حذف میکنند.<\/p><p>فعال کردن این قابلیت مصرف حافظه ی  <i>uBlock<\/i>را افزایش میدهد.<\/p>",
-    "description":"This option enables the parsing and enforcing of Adblock Plus-compatible 'element hiding' filters. These filters are essentially cosmetic, they serve to hide elements in a web page which are deemed to be a visual nuisance, and which can't be blocked by the net request-based filtering engine.\n\nEnabling this feature increases uBlock Origin's memory footprint."
+    "description":"This option enables the parsing and enforcing of Adblock Plus-compatible 'element hiding' filters. These filters are essentially cosmetic, they serve to hide elements in a web page which are deemed to be a visual nuisance, and which can't be blocked by the net request-based filtering engine.\n\nEnabling this feature increases fairBlock's memory footprint."
   },
   "3pListsOfBlockedHostsHeader":{
     "message":"فهرست میزبان های مسدود شده",
@@ -404,8 +404,8 @@
     "description":"English: dynamic rule syntax and full documentation."
   },
   "whitelistPrompt":{
-    "message":"لیستی از هاست هایی که uBlock₀ در آنها غیرفعال خواهد شد. یک مطلب در هر خط. میزبان های نامعتبر در سکوت نادیده گرفته می شوند.",
-    "description":"English: Your list of host names for which uBlock₀ will be disabled. One host name per line. Invalid host names will be silently ignored."
+    "message":"لیستی از هاست هایی که fairBlock در آنها غیرفعال خواهد شد. یک مطلب در هر خط. میزبان های نامعتبر در سکوت نادیده گرفته می شوند.",
+    "description":"English: Your list of host names for which fairBlock will be disabled. One host name per line. Invalid host names will be silently ignored."
   },
   "whitelistImport":{
     "message":"وارد کردن و الحاق",
@@ -544,7 +544,7 @@
     "description":"English: Reset to default settings..."
   },
   "aboutRestoreDataConfirm":{
-    "message":"تمام تنظیمات با استفاده از پشتیبان گیری در {{time}}،  رونویسی شده و uBlock₀ مجدد راه اندازی میشود.\n\nتمام تنظیمات موجود با استفاده از داده های پشتیبانی رونویسی شود؟",
+    "message":"تمام تنظیمات با استفاده از پشتیبان گیری در {{time}}،  رونویسی شده و fairBlock مجدد راه اندازی میشود.\n\nتمام تنظیمات موجود با استفاده از داده های پشتیبانی رونویسی شود؟",
     "description":"Message asking user to confirm restore"
   },
   "aboutRestoreDataError":{
@@ -597,11 +597,11 @@
   },
   "fennecMenuItemBlockingOff":{
     "message":"خاموش",
-    "description":"Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description":"Firefox-specific: appears as 'fairBlock (off)'"
   },
   "docblockedPrompt1":{
     "message":"ublock از بارگذاری این صفحات جلوگیری کرده:",
-    "description":"English: uBlock₀ has prevented the following page from loading:"
+    "description":"English: fairBlock has prevented the following page from loading:"
   },
   "docblockedPrompt2":{
     "message":"بخاطر فیلتر زیر",

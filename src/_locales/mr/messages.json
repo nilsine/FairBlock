@@ -1,6 +1,6 @@
 {
   "extName":{
-    "message":"uBlock₀",
+    "message":"fairBlock",
     "description":"extension name."
   },
   "extShortDesc":{
@@ -9,7 +9,7 @@
   },
   "dashboardName":{
     "message":"म्यूब्लॉक — डैशबोर्ड",
-    "description":"English: uBlock₀ — Dashboard"
+    "description":"English: fairBlock — Dashboard"
   },
   "settingsPageName":{
     "message":"सेटिंग्ज",
@@ -32,7 +32,7 @@
     "description":"appears as tab name in dashboard"
   },
   "statsPageName":{
-    "message":"uBlock₀ — लॉगर",
+    "message":"fairBlock — लॉगर",
     "description":"Title for the logger window"
   },
   "aboutPageName":{
@@ -41,7 +41,7 @@
   },
   "popupPowerSwitchInfo":{
     "message":"क्लिक करा : या साइटसाठी म्यूब्लॉक अक्षम\/सक्षम.\n\nCtrl+क्लिक करा: फक्त या पृष्ठावर म्यूब्लॉक अक्षम.",
-    "description":"English: Click: disable\/enable uBlock₀ for this site.\n\nCtrl+click: disable uBlock₀ only on this page."
+    "description":"English: Click: disable\/enable fairBlock for this site.\n\nCtrl+click: disable fairBlock only on this page."
   },
   "popupBlockedRequestPrompt":{
     "message":"विनंत्या अवरोधित",
@@ -273,7 +273,7 @@
   },
   "3pParseAllABPHideFiltersInfo":{
     "message":"<p>हा पर्याय <a href=\"https:\/\/adblockplus.org\/en\/faq_internal#elemhide\">अद्ब्लोक प्लस सुसंगत &ldquo;घटक लपवणारे&rdquo; फिल्टर<\/a>चे विश्लेषण आणि अंमलबजावणी सक्षम करतो. हे फिल्टर मूलत: उटणे आहेत, ते वेब पृष्ठावर घटक लपवतात जें व्हिज्युअल उपद्रव असल्याचे मानण्यात येतात आणि जे निव्वळ विनंती-आधारित फिल्टरिंग इंजिनद्वारे अवरोधित करणे शक्य नाही.<\/p><p>हे वैशिष्ट्य सक्षम केले तर<i>म्यूब्लॉकचे<\/i> मेमरी पावलाचा ठसा वाढतो.<\/p>",
-    "description":"This option enables the parsing and enforcing of Adblock Plus-compatible 'element hiding' filters. These filters are essentially cosmetic, they serve to hide elements in a web page which are deemed to be a visual nuisance, and which can't be blocked by the net request-based filtering engine.\n\nEnabling this feature increases uBlock Origin's memory footprint."
+    "description":"This option enables the parsing and enforcing of Adblock Plus-compatible 'element hiding' filters. These filters are essentially cosmetic, they serve to hide elements in a web page which are deemed to be a visual nuisance, and which can't be blocked by the net request-based filtering engine.\n\nEnabling this feature increases fairBlock's memory footprint."
   },
   "3pListsOfBlockedHostsHeader":{
     "message":"उअवरोधित होस्ट यांची सूची",
@@ -405,7 +405,7 @@
   },
   "whitelistPrompt":{
     "message":"आपली होस्ट नावांची यादी ज्याचासाठी म्यूब्लॉक अक्षम केले जाईल. प्रति ओळ एक प्रविष्टी. अवैध होस्ट नावांकडे शांतपणे दुर्लक्ष केले जाईल.",
-    "description":"English: Your list of host names for which uBlock₀ will be disabled. One host name per line. Invalid host names will be silently ignored."
+    "description":"English: Your list of host names for which fairBlock will be disabled. One host name per line. Invalid host names will be silently ignored."
   },
   "whitelistImport":{
     "message":"आयात आणि समावेश करा",
@@ -560,7 +560,7 @@
     "description":"English: Network error: unable to connect to {{url}}"
   },
   "subscriberConfirm":{
-    "message":"uBlock₀: Add the following URL to your custom filter lists?\n\nTitle: \"{{title}}\"\nURL: {{url}}",
+    "message":"fairBlock: Add the following URL to your custom filter lists?\n\nTitle: \"{{title}}\"\nURL: {{url}}",
     "description":"English: The message seen by the user to confirm subscription to a ABP filter list"
   },
   "elapsedOneMinuteAgo":{
@@ -597,11 +597,11 @@
   },
   "fennecMenuItemBlockingOff":{
     "message":"off",
-    "description":"Firefox-specific: appears as 'uBlock₀ (off)'"
+    "description":"Firefox-specific: appears as 'fairBlock (off)'"
   },
   "docblockedPrompt1":{
-    "message":"uBlock Origin has prevented the following page from loading:",
-    "description":"English: uBlock₀ has prevented the following page from loading:"
+    "message":"fairBlock has prevented the following page from loading:",
+    "description":"English: fairBlock has prevented the following page from loading:"
   },
   "docblockedPrompt2":{
     "message":"Because of the following filter",
